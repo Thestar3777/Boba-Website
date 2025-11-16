@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="images/weekendLogo.png" />
+    <link rel="stylesheet" href="stylesheet/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boba</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome cdn -->
+
+    <script
+      src="https://kit.fontawesome.com/5342cd28d9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <a href="index.html"><img src="images/weekendLogo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark hide-icon" onclick="hideMenu()"></i>
+          <ul class="nav-text">
+            <li><a href="#about" onclick="hideMenu()">ABOUT</a></li>
+            <li><a href="#menu" onclick="hideMenu()">MENU</a></li>
+            <li><a href="#contactUS" onclick="hideMenu()">VISIT US</a></li>
+            <li><a href="#contactUS" onclick="hideMenu()">CONTACT US</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars hide-icon" onclick="showMenu()"></i>
+      </nav>
+
+      <!--end of navigation-->
+
+      <!--start of hero sections-->
+
+      <div class="text-box">
+        <h1 class="h1-t">
+          Natural Energy Never <br />
+          Looked This Good.
+        </h1>
+        <p>
+          Packed with vitamins, flavor, and energy — because your drink should
+          do more than just taste good.
+        </p>
+        <a href="#contactUS" class="hero-button">ORDER NOW</a>
+      </div>
+    </header>
+
+    <!--start of body section-->
+
+    <section class="featured-drinks" id="menu">
+      <h1>Most Popular Drinks</h1>
+      <p class="section-subtitle">Customer Favorites This Month</p>
+
+      <div class="row">
+        <div class="popular-drinks">
+          <img src="images/ladyPink.png" />
+          <h3>Lady Pink</h3>
+          <p class="drink-description">
+            Creamy berries with unique poping boba
+          </p>
+        </div>
+
+        <div class="popular-drinks">
+          <img src="images/blueLagoon.png" />
+          <h3>Blue Lagoon</h3>
+          <p class="drink-description">
+            Tropical paradise in a cup with cooling blue
+          </p>
+        </div>
+        <div class="popular-drinks">
+          <img src="images/americandream.png" />
+          <h3>Bad & Boujee</h3>
+          <p class="drink-description">Bold sweet and sour energy tea</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- about us-->
+
+    <section class="about" id="about">
+      <h1>About Us</h1>
+      <p>
+        Weekend Nutrition opened with one goal — to bring clean energy, bold
+        flavor, and feel-good vibes to your weekend. Every drink is made with
+        premium ingredients, bright colors, and a whole lot of love.
+      </p>
+      <a href="#contactUS"><button class="hero-button">Get a Drink</button></a>
+    </section>
+
+    <section class="contact-us" id="contactUS">
+      <h1>Contact Us</h1>
+      <div class="row">
+        <div class="popular-drinks contact-card">
+          <div class="card-icon">📱</div>
+          <h3>Text to Order</h3>
+          <p>859-492-8818</p>
+        </div>
+
+        <div class="popular-drinks contact-card">
+          <div class="card-icon">📍</div>
+          <h3>Pickup Location</h3>
+          <p>123 Boba Street</p>
+        </div>
+        <div class="popular-drinks contact-card">
+          <div class="card-icon">🚗</div>
+          <h3>Delivery Available</h3>
+          <p>859-492-8818</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Javascript for toggle menu-->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
